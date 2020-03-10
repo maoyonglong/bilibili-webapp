@@ -8,7 +8,8 @@ const Search = () => import('../pages/search')
 const SearchDefault = () => import('../pages/search/view/Default')
 const SearchFanjv = () => import('../pages/search/view/Fanjv')
 const SearchUp = () => import('../pages/search/view/Up')
-const SearchMovie = () => import('../pages/search/view/movie')
+const SearchMovie = () => import('../pages/search/view/Movie')
+const Test = () => import('../pages/test')
 
 // routerStack
 let routerStack = []
@@ -35,6 +36,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/test',
+      name: 'PageTest',
+      component: Test
+    },
     {
       path: '/',
       name: 'PageIndex',
