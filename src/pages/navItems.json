@@ -1,0 +1,494 @@
+[
+  {
+    "url": "/index",
+    "text": "首页"
+  },
+  {
+    "url": "/channel/1",
+    "text": "动画",
+    "subNavItems": [
+      {
+        "url": "/channel/1",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/24",
+        "text": "MAD·AMV"
+      },
+      {
+        "url": "/channel/25",
+        "text": "MMD·3D"
+      },
+      {
+        "url": "/channel/47",
+        "text": "短片·手书·配音"
+      },
+      {
+        "url": "/channel/27",
+        "text": "综合"
+      },
+      {
+        "url": "/channel/86",
+        "text": "特摄"
+      }
+    ]
+  },
+  {
+    "url": "/channel/13",
+    "text": "番剧",
+    "subNavItems": [
+      {
+        "url": "/channel/13",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/33",
+        "text": "连载动画"
+      },
+      {
+        "url": "/channel/32",
+        "text": "完结动画"
+      },
+      {
+        "url": "/channel/51",
+        "text": "资讯"
+      },
+      {
+        "url": "/channel/152",
+        "text": "官方延伸"
+      }
+    ]
+  },
+  {
+    "url": "/channel/167",
+    "text": "国创",
+    "subNavItems": [
+      {
+        "url": "/channel/167",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/153",
+        "text": "国产动画"
+      },
+      {
+        "url": "/channel/168",
+        "text": "国产原创相关"
+      },
+      {
+        "url": "/channel/169",
+        "text": "布袋戏"
+      },
+      {
+        "url": "/channel/170",
+        "text": "资讯"
+      }
+    ]
+  },
+  {
+    "url": "/channel/3",
+    "text": "音乐",
+    "subNavItems": [
+      {
+        "url": "/channel/3",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/28",
+        "text": "原创音乐"
+      },
+      {
+        "url": "/channel/31",
+        "text": "翻唱"
+      },
+      {
+        "url": "/channel/30",
+        "text": "VOCALOID·UTAU"
+      },
+      {
+        "url": "/channel/194",
+        "text": "电音"
+      },
+      {
+        "url": "/channel/59",
+        "text": "演奏"
+      },
+      {
+        "url": "/channel/29",
+        "text": "MV"
+      },
+      {
+        "url": "/channel/54",
+        "text": "音乐现场"
+      },
+      {
+        "url": "/channel/130",
+        "text": "音乐综合"
+      }
+    ]
+  },
+  {
+    "url": "/channel/129",
+    "text": "舞蹈",
+    "subNavItems": [
+      {
+        "url": "/channel/129",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/20",
+        "text": "宅舞"
+      },
+      {
+        "url": "/channel/154",
+        "text": "舞蹈综合"
+      },
+      {
+        "url": "/channel/156",
+        "text": "舞蹈教程"
+      },
+      {
+        "url": "/channel/198",
+        "text": "街舞"
+      },
+      {
+        "url": "/channel/199",
+        "text": "明星舞蹈"
+      },
+      {
+        "url": "/channel/200",
+        "text": "中国舞"
+      }
+    ]
+  },
+  {
+    "url": "/channel/36",
+    "text": "科技",
+    "subNavItems": [
+      {
+        "url": "/channel/36",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/124",
+        "text": "趣味科普人文"
+      },
+      {
+        "url": "/channel/122",
+        "text": "野生技术协会"
+      },
+      {
+        "url": "/channel/39",
+        "text": "演讲•公开课"
+      },
+      {
+        "url": "/channel/96",
+        "text": "星海"
+      },
+      {
+        "url": "/channel/98",
+        "text": "机械"
+      },
+      {
+        "url": "/channel/176",
+        "text": "汽车"
+      }
+    ]
+  },
+  {
+    "url": "/channel/188",
+    "text": "数码",
+    "subNavItems": [
+      {
+        "url": "/channel/188",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/95",
+        "text": "手机平板"
+      },
+      {
+        "url": "/channel/189",
+        "text": "电脑装机"
+      },
+      {
+        "url": "/channel/190",
+        "text": "摄影摄像"
+      },
+      {
+        "url": "/channel/191",
+        "text": "影音智能"
+      }
+    ]
+  },
+  {
+    "url": "/channel/4",
+    "text": "游戏",
+    "subNavItems": [
+      {
+        "url": "/channel/4",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/17",
+        "text": "单机游戏"
+      },
+      {
+        "url": "/channel/171",
+        "text": "电子竞技"
+      },
+      {
+        "url": "/channel/172",
+        "text": "手机游戏"
+      },
+      {
+        "url": "/channel/65",
+        "text": "网络游戏"
+      },
+      {
+        "url": "/channel/173",
+        "text": "桌游棋牌"
+      },
+      {
+        "url": "/channel/121",
+        "text": "GMV"
+      },
+      {
+        "url": "/channel/136",
+        "text": "音游"
+      },
+      {
+        "url": "/channel/19",
+        "text": "Mugen"
+      }
+    ]
+  },
+  {
+    "url": "/channel/5",
+    "text": "娱乐",
+    "subNavItems": [
+      {
+        "url": "/channel/5",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/71",
+        "text": "综艺"
+      },
+      {
+        "url": "/channel/137",
+        "text": "明星"
+      },
+      {
+        "url": "/channel/131",
+        "text": "Korea相关"
+      }
+    ]
+  },
+  {
+    "url": "/channel/119",
+    "text": "鬼畜",
+    "subNavItems": [
+      {
+        "url": "/channel/119",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/22",
+        "text": "鬼畜调教"
+      },
+      {
+        "url": "/channel/26",
+        "text": "音MAD"
+      },
+      {
+        "url": "/channel/126",
+        "text": "人力VOCALOID"
+      },
+      {
+        "url": "/channel/127",
+        "text": "教程演示"
+      }
+    ]
+  },
+  {
+    "url": "/channel/23",
+    "text": "电影",
+    "subNavItems": [
+      {
+        "url": "/channel/23",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/147",
+        "text": "华语电影"
+      },
+      {
+        "url": "/channel/145",
+        "text": "欧美电影"
+      },
+      {
+        "url": "/channel/146",
+        "text": "日本电影"
+      },
+      {
+        "url": "/channel/83",
+        "text": "其他国家"
+      }
+    ]
+  },
+  {
+    "url": "/channel/11",
+    "text": "电视剧",
+    "subNavItems": [
+      {
+        "url": "/channel/11",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/185",
+        "text": "国产剧"
+      },
+      {
+        "url": "/channel/187",
+        "text": "海外剧"
+      }
+    ]
+  },
+  {
+    "url": "/channel/177",
+    "text": "纪录片",
+    "subNavItems": [
+      {
+        "url": "/channel/177",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/37",
+        "text": "人文·历史"
+      },
+      {
+        "url": "/channel/178",
+        "text": "科学·探索·自然"
+      },
+      {
+        "url": "/channel/179",
+        "text": "军事"
+      },
+      {
+        "url": "/channel/180",
+        "text": "社会·美食·旅行"
+      }
+    ]
+  },
+  {
+    "url": "/channel/181",
+    "text": "影视",
+    "subNavItems": [
+      {
+        "url": "/channel/181",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/182",
+        "text": "影视杂谈"
+      },
+      {
+        "url": "/channel/183",
+        "text": "影视剪辑"
+      },
+      {
+        "url": "/channel/85",
+        "text": "短片"
+      },
+      {
+        "url": "/channel/184",
+        "text": "预告·资讯"
+      }
+    ]
+  },
+  {
+    "url": "/channel/155",
+    "text": "时尚",
+    "subNavItems": [
+      {
+        "url": "/channel/155",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/157",
+        "text": "美妆"
+      },
+      {
+        "url": "/channel/158",
+        "text": "服饰"
+      },
+      {
+        "url": "/channel/164",
+        "text": "健身"
+      },
+      {
+        "url": "/channel/159",
+        "text": "T台"
+      },
+      {
+        "url": "/channel/192",
+        "text": "风尚标"
+      }
+    ]
+  },
+  {
+    "url": "/channel/160",
+    "text": "生活",
+    "subNavItems": [
+      {
+        "url": "/channel/160",
+        "text": "推荐"
+      },
+      {
+        "url": "/channel/138",
+        "text": "搞笑"
+      },
+      {
+        "url": "/channel/21",
+        "text": "日常"
+      },
+      {
+        "url": "/channel/76",
+        "text": "美食圈"
+      },
+      {
+        "url": "/channel/75",
+        "text": "动物圈"
+      },
+      {
+        "url": "/channel/161",
+        "text": "手工"
+      },
+      {
+        "url": "/channel/162",
+        "text": "绘画"
+      },
+      {
+        "url": "/channel/163",
+        "text": "运动"
+      },
+      {
+        "url": "/channel/174",
+        "text": "其他"
+      }
+    ]
+  },
+  {
+    "url": "/channel/165",
+    "text": "广告"
+  },
+  {
+    "url": "/live",
+    "text": "直播"
+  },
+  {
+    "url": "/photo",
+    "text": "相簿"
+  }
+]
