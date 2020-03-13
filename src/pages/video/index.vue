@@ -88,20 +88,10 @@
             <img class="comment__item__avatar" :data-src="me ? me : '/static/noface.gif'">
             <div class="comment__me__say">说点什么吧</div>
           </div>
-          <div class="comment__comment comment__item" v-for="(comment, commentIdx) in comments" :key="commentIdx">
-            <div>
-              <img class="comment__item__avatar" :data-src="comment.member.avatar">
-            </div>
-            <div>
-              <div class="comment__item__info">
-                <router-link to="#" class="comment__item__info__author">{{comment.member.uname}}</router-link>
-                <!-- <span class="comment__item__info__date">{{comment.member.}}</span> -->
-              </div>
-              <p class="comment__item__content">
-                {{comment.content.message}}
-              </p>
-            </div>
-          </div>
+          <comment
+            :comments="comments"
+          >
+          </comment>
         </div>
       </main>
     </scroll-view>
@@ -112,12 +102,14 @@
 import MyHeader from '@/components/Header'
 import VideoItem from '@/components/VideoItem'
 import ScrollView from '@/components/ScrollView'
+import Comment from '@/components/Comment'
 
 export default {
   components: {
     MyHeader,
     VideoItem,
-    ScrollView
+    ScrollView,
+    Comment
   },
   data () {
     return {
@@ -179,7 +171,12 @@ export default {
         .then(resData => {
           const data = resData.data
           const mid = data.upper.mid
-          this.comments = data.replies
+          this.comments = data.replies.map(item => {
+            return {
+              ...item.member,
+              ...item.content
+            }
+          })
           // video info
           this.$axios
             .get('/api/x/space/arc/search', {
@@ -193,7 +190,6 @@ export default {
             .then(resData => {
               const data = resData.data
               this.video = data.list.vlist[0]
-              console.log(this.video)
             })
         })
       this.$axios

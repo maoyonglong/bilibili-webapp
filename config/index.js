@@ -12,19 +12,19 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8888',
         changeOrigin: true
       },
       '/search': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8888',
         changeOrigin: true
       },
       '/video': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8888',
         changeOrigin: true
       },
       '/': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8888',
         changeOrigin: true
       }
     },

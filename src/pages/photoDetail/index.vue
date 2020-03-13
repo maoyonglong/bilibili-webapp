@@ -1,5 +1,5 @@
 <template>
-  <div class="photo">
+  <div>
     <header class="header" ref="header">
       <div class="header__header">
         <router-link to="/" class="header__header__logo">
@@ -12,142 +12,33 @@
           <a href="" class="header__header__right__space">
             <svg class="header__header__right__space__avatar" data-name="\u56FE\u5C42 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><title>default avatar</title><path fill="#e7e7e7" d="M0 0h80v80H0z"></path><path d="M45.78 57.73h2.29a73.4 73.4 0 0 1 4.23 9.5 57.14 57.14 0 0 1 2.62 10.5 50.58 50.58 0 0 1-29.86 0 57.14 57.14 0 0 1 2.62-10.5 73.4 73.4 0 0 1 4.23-9.5h2.29l2.67 7.21 2.41-7.21h1.42l2.41 7.21zM31.72 18.51l4.87 4.87a1.8 1.8 0 0 1 0 2.55 1.8 1.8 0 0 1-2.55 0l-4.87-4.87a1.8 1.8 0 0 1 0-2.55 1.8 1.8 0 0 1 2.55 0zM48.57 18.51a1.8 1.8 0 0 1 2.55 0 1.8 1.8 0 0 1 0 2.55l-4.87 4.87a1.8 1.8 0 0 1-2.55 0 1.8 1.8 0 0 1 0-2.55z" fill="#ccc"></path><path data-name="Combined-Shape" d="M24.2 24.22h31.6a7.2 7.2 0 0 1 7.2 7.2v20.12a7.2 7.2 0 0 1-7.2 7.2H24.2a7.2 7.2 0 0 1-7.2-7.2V31.42a7.2 7.2 0 0 1 7.2-7.2zm1 4a4.24 4.24 0 0 0-4.2 4.29v17.94a4.24 4.24 0 0 0 4.21 4.27h29.5A4.24 4.24 0 0 0 59 50.45V32.51a4.24 4.24 0 0 0-4.21-4.27z" fill="#ccc"></path><path data-name="Combined-Shape" d="M25.88 29.84h28.24a3.22 3.22 0 0 1 3.22 3.21v16.86a3.22 3.22 0 0 1-3.22 3.21H25.88a3.22 3.22 0 0 1-3.22-3.21V33.05a3.22 3.22 0 0 1 3.22-3.21zm0 .8a2.42 2.42 0 0 0-2.42 2.41v16.86a2.42 2.42 0 0 0 2.42 2.41h28.24a2.42 2.42 0 0 0 2.42-2.41V33.05a2.42 2.42 0 0 0-2.42-2.41z" fill="#ccc"></path><path data-name="Combined-Shape" d="M26.73 40.1l7-3.1a1.81 1.81 0 1 1 1.48 3.3l-7 3.1a1.81 1.81 0 1 1-1.48-3.3zM53.27 40.1a1.81 1.81 0 1 1-1.48 3.3l-7-3.1a1.81 1.81 0 1 1 1.48-3.3zM37.58 47.9c-1 0-1.9-.7-2.7-2a.8.8 0 0 1 .26-1.11.81.81 0 0 1 1.11.26c.54.86 1 1.23 1.33 1.23s.79-.37 1.33-1.23a.81.81 0 0 1 1.37 0c.54.86 1 1.23 1.33 1.23s.79-.37 1.33-1.23a.81.81 0 0 1 1.11-.26.8.8 0 0 1 .26 1.11c-.8 1.28-1.69 2-2.7 2a2.71 2.71 0 0 1-2-1.06 2.71 2.71 0 0 1-2.03 1.06z" fill="#ccc"></path></svg>
           </a>
+          <a class="btn">下载</a>
         </div>
       </div>
-      <header-nav-bar :navItems="navItems" :activeIdx="activeIdx"></header-nav-bar>
-      <ul class="header__nav" @click="onMainNavClick" ref="mainNav">
-        <li class="header__nav__item" v-for="(n, nIdx) in mNavItems" :key="nIdx">
-          <a :class="['header__nav__item__link', {'header__nav__item__link--active': nIdx === activeMNavIdx}]" :data-idx="nIdx">
-            {{n}}
-          </a>
-        </li>
-      </ul>
     </header>
-    <div class="main">
-      <scroll-view :height="contentHeight" :pullup="true" @scrollToEnd="onPullup">
-        <div class="waterfall">
-          <water-fall :options="vfOptions">
-            <router-link
-              class="waterfall__item"
-              v-for="(item, idx) in vfOptions.data"
-              :key="idx"
-              :to="`/photoDetail/${item.id}?tab=1&type=2`"
-            >
-              <div class="waterfall__img__wrap">
-                <img v-lazy="normalizeSrc(item.src)" alt="" style="width: 100%;">
-              </div>
-              <div class="waterfall__info">
-                <h3 class="waterfall__info__title">{{item.title}}</h3>
-                <div class="waterfall__info__user">
-                  <img class="waterfall__info__user__avatar" v-lazy="item.avatar" alt="">
-                  <span class="waterfall__info__user__name">{{item.uname}}</span>
-                </div>
-              </div>
-            </router-link>
-          </water-fall>
+    <main class="main">
+      <div class="user">
+        <div class="user__left">
+          <img src="" alt="" class="user__avatar">
+          <div class="user__info">
+            <p class="user__name"></p>
+            <p class="user__post__date"></p>
+          </div>
         </div>
-      </scroll-view>
-    </div>
+        <div class="user__right">
+          <a class="btn">+关注</a>
+        </div>
+      </div>
+      <div class="content"></div>
+      <div class="bottom"></div>
+    </main>
   </div>
 </template>
 
 <script>
-import HeaderNavBar from '@/components/HeaderNavBar'
-import navItems from '../navItems'
-import WaterFall from './WaterFall'
-import ScrollView from '@/components/ScrollView'
-
-let activeIdx
-
-for (let i = 0, len = navItems.length; i < len; i++) {
-  if (navItems[i].text === '相簿') {
-    activeIdx = i
-    break
-  }
-}
-
 export default {
-  components: {
-    HeaderNavBar,
-    WaterFall,
-    ScrollView
-  },
-  data () {
-    return {
-      vfOptions: {
-        data: [],
-        col: 2
-      },
-      contentHeight: 0,
-      navItems,
-      activeIdx,
-      activeMNavIdx: 0,
-      mNavItems: ['画友', '摄影'],
-      num: 0
-    }
-  },
-  methods: {
-    normalizeSrc (src) {
-      var isSupportWebp = !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0
-      return isSupportWebp ? src + '@500w_1e.webp' : src
-    },
-    onScrollEnd () {
-      this.loadData()
-    },
-    setContentHeight () {
-      this.contentHeight = window.innerHeight - this.$refs.header.offsetHeight - this.$refs.mainNav.offsetHeight
-    },
-    onMainNavClick (e) {
-      let target = e.target
-
-      if (typeof target === 'undefined') return
-      if (target.nodeName === 'LI') {
-        target = target.childNode
-      }
-      if (target.nodeName === 'A') {
-        let preActiveMNavIdx = this.activeMNavIdx
-        let curActiveMNavIdx = parseInt(target.dataset.idx)
-        if (preActiveMNavIdx !== curActiveMNavIdx) {
-          this.activeMNavIdx = curActiveMNavIdx
-          this.pageNum = 0
-          this.vfOptions.data = []
-          this.loadData()
-        }
-      }
-    },
-    loadData () {
-      let pageNum = this.num
-      if (pageNum >= 5) return
-      pageNum++
-      let isDefaultPage = this.activeMNavIdx === 0
-      let path = isDefaultPage ? 'Doc' : 'Photo'
-      this.$axios
-        .get(`/vc/link_draw/v2/${path}/index`, {
-          params: {
-            type: 'recommend',
-            page_num: pageNum,
-            page_size: 20
-          }
-        })
-        .then(({ data }) => {
-          this.vfOptions.data = this.vfOptions.data.concat(data.items.map(item => {
-            return {
-              src: item.item.pictures[0].img_src,
-              title: item.item.title,
-              uname: item.user.name,
-              avatar: item.user.head_url,
-              id: item.item.doc_id
-            }
-          }))
-        })
-    },
-    onPullup () {
-      this.loadData()
-    }
-  },
   mounted () {
-    this.setContentHeight()
-    this.loadData()
+    console.log(this.$route.params, this.$route.query)
   }
 }
 </script>
@@ -155,11 +46,10 @@ export default {
 <style lang="scss" scoped>
 $space-size: 48px;
 $avatar-size: 40px;
-$waterfall-border-radius: 12px;
-
 .header {
   position: relative;
   z-index: 1;
+  border-bottom: 2px solid $c-b-gray;
   &__header {
     position: relative;
     z-index: 200;
@@ -176,6 +66,9 @@ $waterfall-border-radius: 12px;
       }
     }
     &__right {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
       a {
         display: inline-block;
       }
@@ -214,48 +107,13 @@ $waterfall-border-radius: 12px;
     }
   }
 }
-.main {
-  background-color: $c-bg-whitef4;
-}
-.waterfall {
-  margin: 15px;
-  margin-top: 0;
-  &__item {
-    padding: 15px;
-    border-radius: 12px;
-  }
-  img {
-    border-radius: $waterfall-border-radius $waterfall-border-radius 0 0;
-  }
-  &__info {
-    line-height: 20px;
-    padding: 20px;
-    border-radius: 0 0 $waterfall-border-radius $waterfall-border-radius;
-    background-color: $c-bg-white;
-    &__title {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: $t-sm;
-      color: $c-t-black1;
-    }
-    &__user {
-      display: flex;
-      align-items: center;
-      &__avatar {
-        width: $avatar-size;
-        height: $avatar-size;
-        margin-right: 5px;
-        border-radius: 50% !important;
-      }
-      &__name {
-        font-size: $t-md;
-        color: $c-t-gray;
-      }
-    }
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
+.btn {
+  width: 158px;
+  line-height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: $t-sm;
+  color: $c-t-white;
+  background-color: $c-bg-pink;
 }
 </style>
