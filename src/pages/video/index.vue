@@ -4,10 +4,19 @@
     <scroll-view :height="mainHeight" ref="scrollView">
       <main class="main">
         <div class="video-face">
-          <img v-lazy="video.pic" alt="" class="video-face__img" :key="video.pic">
+          <!-- <img v-lazy="video.pic" alt="" class="video-face__img" :key="video.pic">
           <span class="video-face__aid">av{{video.aid}}</span>
-          <span class="video-face__play"></span>
+          <span class="video-face__play"></span> -->
           <!-- <span class="video-face__duration"></span> -->
+          <iframe
+            :src="`https://xbeibeix.com/api/bilibili/biliplayer/?url=av${60016166}`"
+            allowfullscreen="allowfullscreen"
+            width="100%"
+            height="100%"
+            scrolling="no"
+            frameborder="0"
+          >
+          </iframe>
         </div>
         <div class="video-in-app"></div>
         <div class="video-info">
@@ -245,12 +254,12 @@ $play-icon-size: 92px;
   &-face {
     position: relative;
     z-index: 101;
-    // height: 422px;
+    height: 422px;
     color: $c-t-white;
-    &__img {
-      width: 100%;
-      // height: 100%;
-    }
+    // &__img {
+    //   width: 100%;
+    //   // height: 100%;
+    // }
     &__aid {
       position: absolute;
       top: 0;
