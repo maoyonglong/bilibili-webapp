@@ -9,7 +9,7 @@
           <span class="video-face__play"></span> -->
           <!-- <span class="video-face__duration"></span> -->
           <iframe
-            :src="`https://xbeibeix.com/api/bilibili/biliplayer/?url=av${60016166}`"
+            :src="`https://xbeibeix.com/api/bilibili/biliplayer/?url=av${aid}`"
             allowfullscreen="allowfullscreen"
             width="100%"
             height="100%"
